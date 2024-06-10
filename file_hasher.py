@@ -36,22 +36,19 @@ root = tk.Tk()
 root.title('File Hasher')
 root.geometry('600x400')
 
-# Установка стиля ttk
+
 style = ttk.Style(root)
 style.theme_use('clam')
 
 main_frame = ttk.Frame(root, padding="10")
 main_frame.pack(fill=tk.BOTH, expand=True)
 
-# Заголовок приложения
 title_label = ttk.Label(main_frame, text="Узнать хеш файлов", font=("TkDefaultFont", 16, "bold"))
 title_label.pack(pady=(0, 10))
 
-# Подсказка
 description_label = ttk.Label(main_frame, text="Выберите папку, содержащую файлы, для которых нужно вычислить хеш.", wraplength=350)
 description_label.pack(pady=10)
 
-# Разделитель
 separator = ttk.Separator(main_frame, orient='horizontal')
 separator.pack(fill='x', pady=10)
 
